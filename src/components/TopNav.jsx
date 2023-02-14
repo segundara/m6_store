@@ -13,7 +13,7 @@ class NavBar extends React.Component {
     render() {
 
         return (
-            <Navbar collapseOnSelect expand="lg">
+            <Navbar className='px-4' collapseOnSelect expand="lg">
                 <Link to="/">
                     <Navbar.Brand>Strive-Mazon</Navbar.Brand>
                 </Link>
