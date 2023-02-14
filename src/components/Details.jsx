@@ -15,7 +15,7 @@ import {
 } from 'react-bootstrap'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import { useAccordionToggle } from "react-bootstrap/AccordionToggle";
+import { useAccordionButton } from "react-bootstrap/AccordionButton";
 import AccordionContext from "react-bootstrap/AccordionContext";
 import ReactStars from "react-rating-stars-component";
 
@@ -23,7 +23,7 @@ import ReactStars from "react-rating-stars-component";
 function CustomToggle({ children, eventKey, callback }) {
     const currentEventKey = useContext(AccordionContext);
 
-    const decoratedOnClick = useAccordionToggle(
+    const decoratedOnClick = useAccordionButton(
         eventKey,
         () => callback && callback(eventKey)
     );
