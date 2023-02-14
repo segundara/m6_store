@@ -8,7 +8,6 @@ import {
   Card,
   Alert,
   Tab,
-  Spinner,
   Nav,
   Badge,
 } from "react-bootstrap";

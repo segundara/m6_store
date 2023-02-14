@@ -4,8 +4,6 @@ import {
     Row,
     Col,
     Image,
-    Navbar,
-    Nav,
     Button,
     Modal,
     Form,

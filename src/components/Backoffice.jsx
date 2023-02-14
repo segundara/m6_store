@@ -2,17 +2,13 @@ import React, { Component } from "react";
 import {
     Container,
     Table,
-    ToggleButton,
-    ToggleButtonGroup,
     DropdownButton,
     Dropdown,
     ButtonGroup,
     Button,
     Modal,
     Form,
-    Alert,
-    Row,
-    Col
+    Alert
 } from "react-bootstrap";
 import Pagination from "react-bootstrap-4-pagination";
 
@@ -182,7 +178,8 @@ class Backoffice extends Component {
             }
         })
 
-        let addPhoto = await fetch(`${process.env.REACT_APP_API_URL}/products/` + this.state.productid + "/upload", {
+        // let addPhoto = 
+        await fetch(`${process.env.REACT_APP_API_URL}/products/` + this.state.productid + "/upload", {
             method: "POST",
             body: data
         })

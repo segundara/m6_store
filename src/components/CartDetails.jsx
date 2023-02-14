@@ -1,5 +1,5 @@
 import React from "react";
-import { Alert, Button, Table, Container } from "react-bootstrap";
+import { Button, Table, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
