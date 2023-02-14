@@ -44,7 +44,7 @@ function CustomToggle({ children, eventKey, callback }) {
         >
             {children}
             <FontAwesomeIcon
-                style={{ height: "auto" }}
+                style={{ height: "2rem" }}
                 icon={isCurrentEventKey ? faAngleUp : faAngleDown}
             />
         </div>
