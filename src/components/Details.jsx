@@ -153,7 +153,7 @@ class Details extends Component {
                                     </p>
                                 </div>
                                 <div className="d-flex justify-content-between w-50">
-                                    <Badge variant="info" style={{ lineHeight: '2rem', fontSize: 'large' }}>€{this.state.product.price}</Badge>
+                                    <Badge bg="info" style={{ lineHeight: '2rem', fontSize: 'large' }}>€{this.state.product.price}</Badge>
                                     <Button variant="secondary" onClick={() => this.setState({ addReview: true })}>Add review</Button>
                                 </div>
 

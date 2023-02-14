@@ -208,7 +208,7 @@ class Products extends React.Component {
                               <small>
                                 <b>{list.category}</b>
                               </small>
-                              <Badge variant="light">
+                              <Badge bg="secondary">
                                 <span>{this.state.numOfProduct[i]}</span>
                               </Badge>
                             </Nav.Link>

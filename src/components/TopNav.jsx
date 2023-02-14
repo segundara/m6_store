@@ -36,7 +36,7 @@ class NavBar extends React.Component {
                         : (
                             <span className='d-flex'>
                                 <FontAwesomeIcon icon={faCartPlus} className="mt-3" onClick={() => this.props.history.push("/checkout")} />
-                                <Badge className='align-self-start' variant="info">{this.props.updateProductInCart ? this.props.updateProductInCart : 0}</Badge>
+                                <Badge className='align-self-start' bg="secondary">{this.props.updateProductInCart ? this.props.updateProductInCart : 0}</Badge>
                             </span>
                         )
                     }
