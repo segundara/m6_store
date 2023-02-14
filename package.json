@@ -16,6 +16,7 @@
     "bootstrap": "^5.2.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
+    "react-bootstrap-4-pagination": "^1.0.4",
     "react-content-loader": "^6.2.0",
     "react-dom": "^18.2.0",
     "react-rating-stars-component": "^2.2.0",
