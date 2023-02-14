@@ -18,7 +18,7 @@ class NavBar extends React.Component {
                     <Navbar.Brand>Strive-Mazon</Navbar.Brand>
                 </Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
+                <Navbar.Collapse id="responsive-navbar-nav" className='d-flex justify-content-between'>
                     <Nav className="mr-auto">
                         <Link to="/backoffice"
                             className={
@@ -34,10 +34,10 @@ class NavBar extends React.Component {
                     {this.props.location.pathname === '/backoffice'
                         ? null
                         : (
-                            <>
-                                <FontAwesomeIcon icon={faCartPlus} className="mt-4" onClick={() => this.props.history.push("/checkout")} />
-                                <Badge variant="info">{this.props.updateProductInCart ? this.props.updateProductInCart : 0}</Badge>
-                            </>
+                            <span className='d-flex'>
+                                <FontAwesomeIcon icon={faCartPlus} className="mt-3" onClick={() => this.props.history.push("/checkout")} />
+                                <Badge className='align-self-start' variant="info">{this.props.updateProductInCart ? this.props.updateProductInCart : 0}</Badge>
+                            </span>
                         )
                     }
                 </Navbar.Collapse>
